@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Our Pricing</h1>
+      <span class="header__span">Annually</span>
+      <label class="header__label" for="toggle"></label>
+      <input class="header__input" type="checkbox" id="toggle" />
+      <span class="header__span">Monthly</span>
+    </header>
+
+    <main class="plans-section">
+      <div class="plan">
+        <h2 class="plan__heading">Basic</h2>
+        <p class="plan__price plan__price--month">&dollar;19.99</p>
+        <p class="plan__price plan__price--year">&dollar;199.99</p>
+        <ul class="plan__features">
+          <hr class="plan__separator" />
+          <li class="plan__features__item">500 GB Storage</li>
+          <hr class="plan__separator" />
+          <li class="plan__features__item">2 Users Allowed</li>
+          <hr class="plan__separator" />
+          <li class="plan__features__item">Send up to 3 GB</li>
+          <hr class="plan__separator" />
+        </ul>
+        <a class="plan__button" href="#">Learn More</a>
+      </div>
+      <div class="plan plan--popular">
+        <h2 class="plan__heading">Professional</h2>
+        <p class="plan__price plan__price--month">&dollar;24.99</p>
+        <p class="plan__price plan__price--year">&dollar;249.99</p>
+        <ul class="plan__features">
+          <hr class="plan__separator" />
+          <li class="plan__features__item">1 TB Storage</li>
+          <hr class="plan__separator" />
+          <li class="plan__features__item">5 Users Allowed</li>
+          <hr class="plan__separator" />
+          <li class="plan__features__item">Send up to 10 GB</li>
+          <hr class="plan__separator" />
+        </ul>
+        <a class="plan__button" href="#">Learn More</a>
+      </div>
+      <div class="plan">
+        <h2 class="plan__heading">Master</h2>
+        <p class="plan__price plan__price--month">&dollar;39.99</p>
+        <p class="plan__price plan__price--year">&dollar;399.99</p>
+        <ul class="plan__features">
+          <hr class="plan__separator" />
+          <li class="plan__features__item">2 TB Storage</li>
+          <hr class="plan__separator" />
+          <li class="plan__features__item">10 Users Allowed</li>
+          <hr class="plan__separator" />
+          <li class="plan__features__item">Send up to 20 GB</li>
+          <hr class="plan__separator" />
+        </ul>
+        <a class="plan__button" href="#">Learn More</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
+</html>

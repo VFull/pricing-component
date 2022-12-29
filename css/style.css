@@ -1,0 +1,118 @@
+body {
+  color: hsl(232, 13%, 33%);
+  font-size: 15px;
+  text-align: center;
+}
+
+.header {
+width: 100%;
+background-color: blueviolet;
+}
+.header__h1 {
+
+}
+.header__span {
+
+}
+.header__label {
+
+}
+.header__input {
+
+}
+.header__span {
+
+}
+
+.plans-section {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+.plan {
+background-color: beige;
+padding: 31px;
+}
+
+.plan--popular{
+background-color: blue;
+}
+
+.plan__heading {
+
+}
+
+.plan__price  {
+
+}
+
+.plan__price--month {
+
+}
+
+.plan__price--year {
+display: none;
+}
+
+.plan__separator {
+  border-top: solid 1px;
+}
+
+
+.plan__features {
+
+}
+.plan__features__item {
+
+}
+.plan__button {
+
+}
+
+.footer {
+  background-color: brown;
+}
+
+.attribution {
+  display: inline;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  display: inline;
+  color: hsl(228, 45%, 44%);
+}
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+
+### Neutral
+
+- Very Light Grayish Blue: hsl(240, 78%, 98%)
+- Light Grayish Blue: hsl(234, 14%, 74%)
+- Grayish Blue: hsl(233, 13%, 49%)
+- Dark Grayish Blue: hsl(232, 13%, 33%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weight: 700
