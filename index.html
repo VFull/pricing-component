@@ -14,8 +14,12 @@
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -24,10 +28,12 @@
   <body>
     <header class="header">
       <h1 class="header__h1">Our Pricing</h1>
-      <span class="header__span">Annually</span>
-      <label class="header__label" for="toggle"></label>
-      <input class="header__input" type="checkbox" id="toggle" />
-      <span class="header__span">Monthly</span>
+      <div class="toggle">
+        <span class="toggle__span">Annually</span>
+        <label class="toggle__label" for="toggle"></label>
+        <input class="toggle__input" type="checkbox" id="toggle" />
+        <span class="toggle__span">Monthly</span>
+      </div>
     </header>
 
     <main class="plans-section">

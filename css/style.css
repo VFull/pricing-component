@@ -2,41 +2,60 @@ body {
   color: hsl(232, 13%, 33%);
   font-size: 15px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .header {
 width: 100%;
 background-color: blueviolet;
+padding-top: 71px;
+padding-bottom: 64px;
 }
 .header__h1 {
+font-size: 32px;
+margin-bottom: 40px;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.toggle__span {
 
 }
-.header__span {
+.toggle__label {
 
 }
-.header__label {
+.toggle__input {
 
 }
-.header__input {
 
-}
-.header__span {
-
-}
 
 .plans-section {
   background-color: aqua;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .plan {
 background-color: beige;
 padding: 31px;
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
 
 .plan--popular{
 background-color: blue;
+color: #fff;
+padding-top: 55px;
+padding-bottom: 55px;
+border-radius: 10px;
 }
 
 .plan__heading {
@@ -44,7 +63,8 @@ background-color: blue;
 }
 
 .plan__price  {
-
+font-size: 72px;
+line-height: 71px;
 }
 
 .plan__price--month {
@@ -56,18 +76,35 @@ display: none;
 }
 
 .plan__separator {
-  border-top: solid 1px;
+  border-top: solid 1px hsl(232, 13%, 33%);
+  opacity: .25;
+}
+
+.plan--popular .plan__separator {
+  border-top: solid 1px #fff;
 }
 
 
 .plan__features {
-
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 .plan__features__item {
 
 }
 .plan__button {
+text-transform: uppercase;
+color: #fff;
+/* background-color: blue; */
+background: linear-gradient(to bottom right, hsl(236, 72%, 79%) 50%, hsl(237, 63%, 64%) 100%) ;
+padding: 14px;
+border-radius: 6px;
+}
 
+.plan--popular .plan__button {
+  background: linear-gradient(to bottom-right, blue) ;
+  color: #000;
 }
 
 .footer {
