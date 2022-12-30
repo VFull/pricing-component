@@ -1,125 +1,198 @@
 body {
-  
   color: hsl(233, 13%, 49%);
   font-size: 15px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 28px;
+  caret-color: transparent;
 }
 
 .header {
-width: 100%;
-/* background-color: blueviolet; */
-padding-top: 71px;
-padding-bottom: 64px;
+  width: 100%;
+  padding-top: 71px;
+  padding-bottom: 64px;
+  
 }
 .header__h1 {
-font-size: 32px;
-margin-bottom: 40px;
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .toggle {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .toggle__span {
-opacity: .5;
+  opacity: 0.5;
 }
+
 .toggle__label {
-
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
+  width: 56px;
+  height: 32px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
 }
+
+.toggle__label:hover {
+  opacity: 0.5;
+}
+
 .toggle__input {
-
+  display: none;
 }
 
+.toggle__ball {
+  background-color: #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  /* animation: slideMonthly 0.3s linear forwards; */
+  animation: slideMonthly 0.3s linear forwards;
+}
+
+#toggle:checked + .toggle__label .toggle__ball {
+  animation: slideAnnually 0.3s linear forwards;
+}
+
+@keyframes slideAnnually {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(-12px) scale(1.2);
+  }
+  100% {
+    transform: translateX(-24px) scale(1);
+  }
+}
+
+@keyframes slideMonthly {
+  0% {
+    transform: translateX(-24px) scale(1);
+  }
+  50% {
+    transform: translateX(-12px) scale(1.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
 
 .plans-section {
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .plan {
-/* background-color: beige; */
-padding: 31px;
-display: flex;
-flex-direction: column;
-gap: 20px;
+  padding: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.plan--popular{
-
-background: linear-gradient(to bottom right, hsl(236, 72%, 79%) 50%, hsl(237, 63%, 64%) 100%) ;
-color: #fff;
-padding-top: 55px;
-padding-bottom: 55px;
-border-radius: 10px;
+.plan--popular {
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
+  color: #fff;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-radius: 10px;
 }
 
 .plan__heading {
-
 }
 
-.plan__price  {
-color: hsl(232, 13%, 33%);
-font-size: 72px;
-line-height: 71px;
-padding: 0 40px;
+.plan__dollar-sign {
+  font-size: 40px;
+  line-height: 48px;
 }
 
-.plan__price--popular  {
+.plan__price {
+  color: hsl(232, 13%, 33%);
+  font-size: 72px;
+  line-height: 71px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plan__price--popular {
   color: #fff;
-  }
+}
 
 .plan__price--month {
-
 }
 
 .plan__price--year {
-display: none;
+  display: none;
 }
 
 .plan__separator {
   border-top: solid 1px hsl(232, 13%, 33%);
-  opacity: .25;
+  opacity: 0.25;
 }
 
 .plan--popular .plan__separator {
   border-top: solid 1px #fff;
 }
 
-
 .plan__features {
-display: flex;
-flex-direction: column;
-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .plan__features__item {
-
 }
 .plan__button {
-text-transform: uppercase;
-color: #fff;
-/* background-color: blue; */
-background: linear-gradient(to bottom right, hsl(236, 72%, 79%) 50%, hsl(237, 63%, 64%) 100%) ;
-padding: 14px;
-border-radius: 6px;
-line-height: 15.81px;
-font-size: 13px;
-letter-spacing: 1.39px;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 100%
+  );
+  padding: 14px;
+  border-radius: 6px;
+  line-height: 15.81px;
+  font-size: 13px;
+  letter-spacing: 1.39px;
 }
+
 .plan__button--popular {
   background: none;
   background-color: #fff;
-  color: #000;
+  color: hsla(237, 63%, 65%, 1);
 }
 
-.footer {
-  /* background-color: brown; */
+.plan__button:hover {
+  background: none;
+  background-color: #fff;
+  color: hsla(237, 63%, 65%, 1);
+  box-shadow: inset 0px 0px 0 1px hsla(237, 63%, 65%, 1);
+}
+
+.plan__button--popular:hover {
+  background: none;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: inset 0px 0px 0 1px #fff;
 }
 
 .attribution {
@@ -131,36 +204,3 @@ letter-spacing: 1.39px;
   display: inline;
   color: hsl(228, 45%, 44%);
 }
-
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
-
-### Neutral
-
-- Very Light Grayish Blue: hsl(240, 78%, 98%)
-- Light Grayish Blue: hsl(234, 14%, 74%)
-- Grayish Blue: hsl(233, 13%, 49%)
-- Dark Grayish Blue: hsl(232, 13%, 33%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px
-
-### Font
-
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weight: 700

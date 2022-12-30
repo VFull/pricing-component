@@ -30,8 +30,10 @@
       <h1 class="header__h1">Our Pricing</h1>
       <div class="toggle">
         <span class="toggle__span">Annually</span>
-        <label class="toggle__label" for="toggle"></label>
         <input class="toggle__input" type="checkbox" id="toggle" />
+        <label class="toggle__label" for="toggle">
+          <div class="toggle__ball"></div>
+        </label>
         <span class="toggle__span">Monthly</span>
       </div>
     </header>
@@ -39,8 +41,8 @@
     <main class="plans-section">
       <div class="plan">
         <h2 class="plan__heading">Basic</h2>
-        <p class="plan__price plan__price--month">&dollar;19.99</p>
-        <p class="plan__price plan__price--year">&dollar;199.99</p>
+        <p class="plan__price plan__price--month" id="monthly-price-basic"><span class="plan__dollar-sign">&dollar;</span>19.99</p>
+        <p class="plan__price plan__price--year" id="yearly-price-basic"><span class="plan__dollar-sign">&dollar;</span>199.99</p>
         <ul class="plan__features">
           <hr class="plan__separator" />
           <li class="plan__features__item">500 GB Storage</li>
@@ -54,11 +56,11 @@
       </div>
       <div class="plan plan--popular">
         <h2 class="plan__heading">Professional</h2>
-        <p class="plan__price plan__price--month plan__price--popular">
-          &dollar;24.99
+        <p class="plan__price plan__price--month plan__price--popular" id="monthly-price-professional">
+          <span class="plan__dollar-sign" >&dollar;</span>24.99
         </p>
-        <p class="plan__price plan__price--year plan__price--popular">
-          &dollar;249.99
+        <p class="plan__price plan__price--year plan__price--popular" id="yearly-price-professional">
+          <span class="plan__dollar-sign" >&dollar;</span>249.99
         </p>
         <ul class="plan__features">
           <hr class="plan__separator" />
@@ -73,8 +75,8 @@
       </div>
       <div class="plan">
         <h2 class="plan__heading">Master</h2>
-        <p class="plan__price plan__price--month">&dollar;39.99</p>
-        <p class="plan__price plan__price--year">&dollar;399.99</p>
+        <p class="plan__price plan__price--month" id="monthly-price-master"><span class="plan__dollar-sign">&dollar;</span>39.99</p>
+        <p class="plan__price plan__price--year" id="yearly-price-master"><span class="plan__dollar-sign">&dollar;</span>399.99</p>
         <ul class="plan__features">
           <hr class="plan__separator" />
           <li class="plan__features__item">2 TB Storage</li>
@@ -95,5 +97,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
