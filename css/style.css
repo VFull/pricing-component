@@ -127,7 +127,7 @@ body {
   color: hsl(232, 13%, 33%);
   font-size: 72px;
   line-height: 71px;
-  padding: 0 40px;
+  
   display: flex;
   align-items: center;
   gap: 8px;
@@ -138,10 +138,12 @@ body {
 }
 
 .plan__price--month {
+  padding: 0 42px;
 }
 
 .plan__price--year {
   display: none;
+padding: 0 20px;
 }
 
 .plan__separator {

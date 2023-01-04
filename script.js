@@ -7,8 +7,6 @@ const yearlyPriceBasic = document.getElementById('yearly-price-basic');
 const yearlyPriceProfessional = document.getElementById('yearly-price-professional');
 const yearlyPriceMaster = document.getElementById('yearly-price-master');
 
-//console.log(toggle);
-
 let monthly;
 
 toggle.addEventListener("click", switchToggle);
